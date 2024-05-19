@@ -16,12 +16,10 @@ class _HomePageState extends State<HomePage> {
   Widget build(BuildContext context) {
     return Scaffold(
       body: Container(
-        decoration: BoxDecoration(
+        decoration: const BoxDecoration(
           image: DecorationImage(
             image: AssetImage(
-              Provider.of<ColorSchemeProvider>(context).themeData == lightMode
-                  ? 'assets/images/bg_black.jpg'
-                  : 'assets/images/bg_white.jpg',
+              'assets/images/bg_black.jpg',
             ),
             fit: BoxFit.cover,
           ),

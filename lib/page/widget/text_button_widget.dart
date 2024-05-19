@@ -7,10 +7,10 @@ class TextButtonWidget extends StatefulWidget {
   final String text;
 
   const TextButtonWidget({
-    Key? key,
+    super.key,
     required this.onPressed,
     required this.text,
-  }) : super(key: key);
+  });
 
   @override
   State<TextButtonWidget> createState() => _TextButtonWidgetState();
@@ -20,12 +20,12 @@ class _TextButtonWidgetState extends State<TextButtonWidget> {
   @override
   Widget build(BuildContext context) {
     return TextButton(
-      onPressed: () => widget.onPressed,
+      onPressed: widget.onPressed,
       child: Text(
         widget.text,
         style: GoogleFonts.passionOne(
-          fontSize: 18,
-          color: Theme.of(context).colorScheme.primary,
+          fontSize: 22,
+          color: Theme.of(context).colorScheme.onSecondary,
         ),
       ),
     );

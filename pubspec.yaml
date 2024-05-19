@@ -40,6 +40,7 @@ dependencies:
   flutter_scroll_to_top: ^2.3.0
   scrolls_to_top: ^2.1.1
   popover: ^0.3.0
+  animated_text_kit: ^4.2.2
 
 dev_dependencies:
   flutter_test:
